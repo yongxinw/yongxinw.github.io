@@ -17,7 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/seal_icon.png">
+  <link rel="icon" type="image/png" href="assets/cmu-scotty-scarf.png">
 </head>
 
 <body>
@@ -41,14 +41,14 @@
               with double majors in Computer Science and Industrial Engineering. I also had the fortune to work with <a href="http://www.rehg.org">Prof. Jim Rehg</a>
               at the <a href="http://behavioralimaging.net/index.php">Center for Behavioral Imaging</a> </p>
               <p style="text-align:center">
-                <a href="mailto:yongxinw@andrew.cmu.edu">Email</a> &nbsp/&nbsp
-                <a href="data/YongxinWang_CV.pdf">CV</a> &nbsp/&nbsp
+                <a href="mailto:yongxinw@andrew.cmu.edu">yongxinw@andrew.cmu.edu</a> &nbsp/&nbsp
+                <a href="assets/bio/Yongxin_Wang_CV.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=VE02K0IAAAAJ">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/yongxin-wang-944791a3/"> LinkedIn </a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/HEADSHOT_RICHARD.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/HEADSHOT_RICHARD_circle.png" class="hoverZoomLink"></a>
+              <a href="assets/bio/HEADSHOT_RICHARD.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="assets/bio/HEADSHOT_RICHARD_circle.png" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -57,18 +57,57 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in computer vision, multimodal machine learning, and human understanding. Much of my research is about inferring the physical world (shape, depth, motion, paint, light, colors, etc) from images. Representative papers are <span class="highlight">highlighted</span>.
+                I'm interested in computer vision and multimodal machine learning. Much of my research is about trying to
+                understand human's behaviors through computer vision and multimodal machine learning. In the past, I've worked on
+                human gaze tracking, pedestrian tracking, and social intelligence modeling. I've also got some experience in data
+                visualization.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <!-- GNN tracking, ECCV 2020 -->
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='gnn_tracking'><img src='assets/images/GNN_Track_160x160.PNG'></div>
+              <img src='assets/images/GNN_Track_160x160.PNG'>
+            </div>
+            <script type="text/javascript">
+              function nightsight_start() {
+                document.getElementById('nightsight_image').style.opacity = "1";
+              }
 
+              function nightsight_stop() {
+                document.getElementById('nightsight_image').style.opacity = "0";
+              }
+              nightsight_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="">
+              <papertitle>Graph Neural Network for Simultaneous Detection and Association for Multi-Object Tracking</papertitle>
+            </a>
+            <br>
+            <strong>Yongxin Wang</strong>,
+            <a href="https://natanielruiz.github.io/">Xinshuo Weng</a>,
+            <a href="http://www.cs.cmu.edu/~kkitani/">Kris M. Kitani</a>,
+            <br>
+            <em>In Progress</em>
+            <br>
+            <a href="assets/videos/MOT17-09-FRCNN-det-final.avi">video</a>
+            <br>
+            <p></p>
+            <p>Simultaneous pedestrian detection and tracking using Graph Neural Networks</p>
+          </td>
+        </tr>
+
+          <!-- GNN Social IQ, ECCV 2020 -->
           <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='nightsight_image'><img src='images/nightsight_after.jpg'></div>
-                <img src='images/nightsight_before.jpg'>
+                <div class="two" id='socialIQ'><img src='assets/images/SocialIQ_160x160.png'></div>
+                <img src='assets/images/SocialIQ_160x160.png'>
               </div>
               <script type="text/javascript">
                 function nightsight_start() {
@@ -82,76 +121,147 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/1910.11336">
-                <papertitle>Handheld Mobile Photography in Very Low Light</papertitle>
+              <a href="">
+                <papertitle>Modeling Social Intelligence: Multimodal Social Question Answering using
+                Graph Neural Networks</papertitle>
               </a>
               <br>
-              <a href="https://sites.google.com/site/orlylibaprofessional/">Orly Liba</a>,
-              <a href="https://scholar.google.com/citations?user=6PhlPWMAAAAJ">Kiran Murthy</a>,
-              <a href="https://ai.google/research/people/105312/">Yun-Ta Tsai</a>,
-              <a href="https://www.timothybrooks.com/">Timothy Brooks</a>,
-              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
-              <a href="https://scholar.google.com/citations?user=qgc_jY0AAAAJ">Nikhil Karnad</a>,
-              <a href="https://scholar.google.com/citations?user=BxqV_RsAAAAJ">Qiurui He</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://ai.google/research/people/105641/">Dillon Sharlet</a>,
-              <a href="http://www.geisswerks.com/">Ryan Geiss</a>,
-              <a href="https://people.csail.mit.edu/hasinoff/">Samuel W. Hasinoff</a>,
-              <a href="https://scholar.google.com/citations?user=2jXxOYQAAAAJ">Yael Pritch</a>,
-              <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy</a>
+              <a href="https://www.amir-zadeh.com/">Amir Zadeh</a>,
+              <strong>Yongxin Wang</strong>,
+              Jianing Yang,
+              Yuying Zhu,
+              Ruitao Yi,
+              <a href="https://www.cs.cmu.edu/~morency/">Louis-Philippe Morency</a>
               <br>
-              <em>SIGGRAPH Asia</em>, 2019
+              <em>In Progress</em>
               <br>
-              <a href="https://github.com/google/night-sight/tree/master/docs">project page</a>
               <br>
               <p></p>
-              <p>By rethinking metering, white balance, and tone mapping, we can take pictures in places too dark for humans to see clearly.</p>
+              <p>Using Graph Neural Networks for video question answering grounded in social space</p>
             </td>
           </tr>
-          
+
+          <!-- Gaze tracking, ECCV 2018 -->
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='assets/images/ECCV18_160x160.PNG'></div>
+                <img src='assets/images/ECCV18_160x160.PNG'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Eunji_Chong_Connecting_Gaze_Scene_ECCV_2018_paper.pdf">
+                <papertitle>Connecting Gaze, Scene, and Attention:
+                  Generalized Attention Estimation via Joint
+                  Modeling of Gaze and Scene Saliency</papertitle>
+              </a>
+              <br>
+              <a href="https://www.cc.gatech.edu/~echong8/">Eunji Chong</a>,
+              <a href="https://natanielruiz.github.io/">Nataniel Ruiz </a>,
+              <strong>Yongxin Wang</strong>,
+              <a href="https://sites.google.com/view/yunzhang/home">Yun Zhang</a>,
+              <a href="http://www.agatarozga.org/">Agata Rozga</a>,
+              <a href="http://rehg.org/">James M. Rehg</a>,
+              <br>
+              <em>European Conference on Computer Vision (<strong>ECCV</strong>)</em>, 2018
+              <br>
+              <a href="assets/posters/argos_poster.pdf">poster</a> /
+              <a href="assets/bibs/Chong_2018_ECCV.bib">bibtex</a>
+              <br>
+              <p></p>
+              <p>Predicting where the people are looking at.</p>
+            </td>
+          </tr>
+
+          <!-- TypoTweet Maps, Euro Vis 2017 -->
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='eurovis'><img src='assets/images/EuroVis17_160x160.PNG'></div>
+                <img src='assets/images/EuroVis17_160x160.PNG'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="assets/papers/eurovis17-typotweet.pdf">
+                <papertitle>TypoTweet Maps: Characterizing Urban Areas
+                  through Typographic Social Media Visualization</papertitle>
+              </a>
+              <br>
+              <a href="http://www.jagodwin.com/">Alex Godwin</a>,
+              <strong>Yongxin Wang</strong>,
+              <a href="https://www.cc.gatech.edu/~john.stasko/">John T. Stasko</a>,
+              <br>
+              <em>European Conference on Visualization (<strong>EuroVis</strong>)</em>, 2017
+              <br>
+              <a href="assets/bibs/Godwin_2017_EuroViz.bib">bibtex</a>
+              <br>
+              <p></p>
+              <p>Visualizing social media data in a Typographic map.</p>
+            </td>
+          </tr>
 
 
 
         </tbody></table>
 
-<!--        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>-->
-<!--          <tr>-->
-<!--            <td>-->
-<!--              <heading>Service</heading>-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--        </tbody></table>-->
-<!--        <table width="100%" align="center" border="0" cellpadding="20"><tbody>-->
-<!--          <tr>-->
-<!--            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>-->
-<!--            <td width="75%" valign="center">-->
-<!--              <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>-->
-<!--              <br>-->
-<!--              <br>-->
-<!--              <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <td style="padding:20px;width:25%;vertical-align:middle">-->
-<!--              <img src="images/cs188.jpg" alt="cs188">-->
-<!--            </td>-->
-<!--            <td width="75%" valign="center">-->
-<!--              <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>-->
-<!--              <br>-->
-<!--              <br>-->
-<!--              <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>-->
-<!--              <br>-->
-<!--              <br>-->
-<!--              <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--        </tbody></table>-->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Experiences</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
+            <td width="75%" valign="center">
+              <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
+              <br>
+              <br>
+              <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/cs188.jpg" alt="cs188">
+            </td>
+            <td width="75%" valign="center">
+              <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
+              <br>
+              <br>
+              <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
+              <br>
+              <br>
+              <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
+            </td>
+          </tr>
+        </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                Template from <a href="https://jonbarron.info/">here</a>,
+                Template from <a href="https://jonbarron.info/">here</a>
               </p>
             </td>
           </tr>
