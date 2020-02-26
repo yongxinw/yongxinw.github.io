@@ -26,7 +26,7 @@
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
+            <td style="padding:2.5%;width:63%;vertical-align:top">
               <p style="text-align:center">
                 <name>Yongxin (Richard) Wang</name>
               </p>
@@ -54,7 +54,7 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
+            <td style="padding:20px;width:100%;vertical-align:top">
               <heading>Research</heading>
               <p>
                 I'm interested in computer vision and multimodal machine learning. Much of my research is about trying to
@@ -65,10 +65,80 @@
             </td>
           </tr>
         </tbody></table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <!-- Video gaze tracking, CVPR 2020 -->
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:top">
+              <div class="one">
+                <div class="two" id='gaze2020'><img src='assets/images/VideoGaze2020.png'></div>
+                <img src='assets/images/VideoGaze2020.png'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <a href="">
+                <papertitle>Detecting Attended Visual Targets in Video</papertitle>
+              </a>
+              <br>
+              <a href="https://www.cc.gatech.edu/~echong8/">Eunji Chong</a>,
+              <strong>Yongxin Wang</strong>,
+              <a href="https://natanielruiz.github.io/">Nataniel Ruiz </a>,
+              <a href="http://rehg.org/">James M. Rehg</a>
+              <br>
+              <em>Computer Vision and Pattern Recognition (<strong>CVPR</strong>)</em>, 2020
+              <p></p>
+              <p>Predicting where the people are looking at in videos.</p>
+            </td>
+          </tr>
+
+          <!-- GNN 3D Tracking, CVPR2020-->
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:top">
+              <div class="one">
+                <div class="two" id='gnn3d'><img src='assets/images/gnn3d.png'></div>
+                <img src='assets/images/gnn3d.png'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <a href="">
+                <papertitle>Graph Neural Network for 3D Multi-Object Tracking with Multi-Feature Learning</papertitle>
+              </a>
+              <br>
+                <a href="http://www.xinshuoweng.com/">Xinshuo Weng</a>,
+                <strong>Yongxin Wang</strong>,
+                <a href="http://www.cs.cmu.edu/~kkitani/">Kris M. Kitani</a>
+              <br>
+              <em>Computer Vision and Pattern Recognition (<strong>CVPR</strong>), 2020</em>
+
+              <br>
+              <br>
+              <p></p>
+            </td>
+          </tr>
+
           <!-- GNN tracking, ECCV 2020 -->
           <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-          <td style="padding:20px;width:25%;vertical-align:middle">
+          <td style="padding:20px;width:25%;vertical-align:top">
             <div class="one">
               <div class="two" id='gnn_tracking'><img src='assets/images/GNN_Track_160x160.PNG'></div>
               <img src='assets/images/GNN_Track_160x160.PNG'>
@@ -84,14 +154,14 @@
               nightsight_stop()
             </script>
           </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
+          <td style="padding:20px;width:75%;vertical-align:top">
             <a href="">
               <papertitle>Graph Neural Network for Simultaneous Detection and Association for Multi-Object Tracking</papertitle>
             </a>
             <br>
             <strong>Yongxin Wang</strong>,
-            <a href="https://natanielruiz.github.io/">Xinshuo Weng</a>,
-            <a href="http://www.cs.cmu.edu/~kkitani/">Kris M. Kitani</a>,
+            <a href="http://www.xinshuoweng.com/">Xinshuo Weng</a>,
+            <a href="http://www.cs.cmu.edu/~kkitani/">Kris M. Kitani</a>
             <br>
             <em>In Progress</em>
             <br>
@@ -104,7 +174,7 @@
 
           <!-- GNN Social IQ, ECCV 2020 -->
           <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
                 <div class="two" id='socialIQ'><img src='assets/images/SocialIQ_160x160.png'></div>
                 <img src='assets/images/SocialIQ_160x160.png'>
@@ -120,7 +190,7 @@
                 nightsight_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:20px;width:75%;vertical-align:top">
               <a href="">
                 <papertitle>Modeling Social Intelligence: Multimodal Social Question Answering using
                 Graph Neural Networks</papertitle>
@@ -143,7 +213,7 @@
 
           <!-- Gaze tracking, ECCV 2018 -->
           <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
                 <div class="two" id='nightsight_image'><img src='assets/images/ECCV18_160x160.PNG'></div>
                 <img src='assets/images/ECCV18_160x160.PNG'>
@@ -159,7 +229,7 @@
                 nightsight_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:20px;width:75%;vertical-align:top">
               <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Eunji_Chong_Connecting_Gaze_Scene_ECCV_2018_paper.pdf">
                 <papertitle>Connecting Gaze, Scene, and Attention:
                   Generalized Attention Estimation via Joint
@@ -171,7 +241,7 @@
               <strong>Yongxin Wang</strong>,
               <a href="https://sites.google.com/view/yunzhang/home">Yun Zhang</a>,
               <a href="http://www.agatarozga.org/">Agata Rozga</a>,
-              <a href="http://rehg.org/">James M. Rehg</a>,
+              <a href="http://rehg.org/">James M. Rehg</a>
               <br>
               <em>European Conference on Computer Vision (<strong>ECCV</strong>)</em>, 2018
               <br>
@@ -185,7 +255,7 @@
 
           <!-- TypoTweet Maps, Euro Vis 2017 -->
           <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
                 <div class="two" id='eurovis'><img src='assets/images/EuroVis17_160x160.PNG'></div>
                 <img src='assets/images/EuroVis17_160x160.PNG'>
@@ -201,7 +271,7 @@
                 nightsight_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:20px;width:75%;vertical-align:top">
               <a href="assets/papers/eurovis17-typotweet.pdf">
                 <papertitle>TypoTweet Maps: Characterizing Urban Areas
                   through Typographic Social Media Visualization</papertitle>
@@ -234,7 +304,7 @@
         <table width="100%" align="center" border="0" cellpadding="20"><tbody>
           <!-- Kris -->
           <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle"><img src="assets/images/cmu-wordmark-square-w-on-r_160x160.png"></td>
+            <td style="padding:20px;width:25%;vertical-align:top"><img src="assets/images/cmu-wordmark-square-w-on-r_160x160.png"></td>
             <td width="75%" valign="top">
               <a href="http://www.cmu.edu"><strong style="font-size: 18px">Carnegie Mellon University</strong></a>, <strong style="font-size: 18px">Jan. 2019 - Present</strong>
               <br>
@@ -246,7 +316,7 @@
           </tr>
           <!-- LP -->
           <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:20px;width:25%;vertical-align:top">
               <img src="assets/images/cmu-wordmark-square-w-on-r_160x160.png"></td>
             <td width="75%" valign="top">
               <a href="http://www.cmu.edu"><strong style="font-size: 18px">Carnegie Mellon University</strong></a>, <strong style="font-size: 18px">Aug. 2019 - Present</strong>
@@ -259,7 +329,7 @@
           </tr>
           <!-- Amazon -->
           <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:20px;width:25%;vertical-align:top">
               <img src="assets/images/aws_160x160.png"></td>
             <td width="75%" valign="top">
               <a href="https://aws.amazon.com/rekognition/"><strong style="font-size: 18px">Amazon Rekognition</strong></a>,   <strong style="font-size: 18px">May. 2019 - Aug. 2019</strong>
@@ -272,9 +342,9 @@
           </tr>
           <!-- GT -->
           <tr>
-            <td style="width:25%;vertical-align:middle;horiz-align: right">
+            <td style="width:25%;vertical-align:top;horiz-align: right">
               <img src="assets/images/gt_160x160.png" style="horiz-align: right"></td>
-            <td width="75%" valign="top" >
+            <td width="75%" style="vertical-align:top">
               <p><a href="http://www.gatech.edu"><strong style="font-size: 18px">Georgia Institute of Technology</strong></a>, <strong style="font-size: 18px">Jan. 2017 - May. 2018</strong></p>
               <p>
                 Research Assistant Intern with <a href="https://www.rehg.org"><strong>Prof. Jim Rehg</strong></a>
@@ -283,66 +353,6 @@
             </td>
           </tr>
         </tbody></table>
-
-<!--        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>-->
-<!--        <tr>-->
-<!--          <td>-->
-<!--            <heading>Projects</heading>-->
-<!--          </td>-->
-<!--        </tr>-->
-<!--        </tbody></table>-->
-<!--        <table width="100%" align="center" border="0" cellpadding="20"><tbody>-->
-<!--        &lt;!&ndash; Kris &ndash;&gt;-->
-<!--        <tr>-->
-<!--          <td style="padding:20px;width:25%;vertical-align:middle"><img src="assets/images/cmu-wordmark-square-w-on-r_160x160.png"></td>-->
-<!--          <td width="75%" valign="top">-->
-<!--            <a href="http://www.cmu.edu"><strong style="font-size: 18px">Carnegie Mellon University</strong></a>, <strong style="font-size: 18px">Jan. 2019 - Present</strong>-->
-<!--            <br>-->
-<!--            <p>-->
-<!--              Research Assistant with <a href="http://www.cs.cmu.edu/~kkitani/"><strong>Prof. Kris Kitani</strong></a>-->
-<!--            </p>-->
-<!--            <p> Worked on simultaneous detection and associate with Graph Neural Networks for Multi-Object Tracking</p>-->
-<!--          </td>-->
-<!--        </tr>-->
-<!--        &lt;!&ndash; LP &ndash;&gt;-->
-<!--        <tr>-->
-<!--          <td style="padding:20px;width:25%;vertical-align:middle">-->
-<!--            <img src="assets/images/cmu-wordmark-square-w-on-r_160x160.png"></td>-->
-<!--          <td width="75%" valign="top">-->
-<!--            <a href="http://www.cmu.edu"><strong style="font-size: 18px">Carnegie Mellon University</strong></a>, <strong style="font-size: 18px">Aug. 2019 - Present</strong>-->
-<!--            <br>-->
-<!--            <p>-->
-<!--              Research Assistant with <a href="https://www.cs.cmu.edu/~morency/"><strong>Prof. Louis-Philippe Morency</strong></a>-->
-<!--            </p>-->
-<!--            <p> Worked on social intelligence modeling with Graph Neural Networks on Social-IQ dataset</p>-->
-<!--          </td>-->
-<!--        </tr>-->
-<!--        &lt;!&ndash; Amazon &ndash;&gt;-->
-<!--        <tr>-->
-<!--          <td style="padding:20px;width:25%;vertical-align:middle">-->
-<!--            <img src="assets/images/aws_160x160.png"></td>-->
-<!--          <td width="75%" valign="top">-->
-<!--            <a href="https://aws.amazon.com/rekognition/"><strong style="font-size: 18px">Amazon Rekognition</strong></a>,   <strong style="font-size: 18px">May. 2019 - Aug. 2019</strong>-->
-<!--            <br>-->
-<!--            <p>-->
-<!--              Applied Scientist Intern with <a href="https://scholar.google.se/citations?user=OCdJxC8AAAAJ"><strong>Dr. Wei Xia</strong></a>-->
-<!--            </p>-->
-<!--            <p> Worked on high-resolution face synthesis with disentangled control through facial identity and attributes</p>-->
-<!--          </td>-->
-<!--        </tr>-->
-<!--        &lt;!&ndash; GT &ndash;&gt;-->
-<!--        <tr>-->
-<!--          <td style="width:25%;vertical-align:middle;horiz-align: right">-->
-<!--            <img src="assets/images/gt_160x160.png" style="horiz-align: right"></td>-->
-<!--          <td width="75%" valign="top" >-->
-<!--            <p><a href="http://www.gatech.edu"><strong style="font-size: 18px">Georgia Institute of Technology</strong></a>, <strong style="font-size: 18px">Jan. 2017 - May. 2018</strong></p>-->
-<!--            <p>-->
-<!--              Research Assistant Intern with <a href="https://www.rehg.org"><strong>Prof. Jim Rehg</strong></a>-->
-<!--            </p>-->
-<!--            <p> Worked on gaze target prediction in image and in video</p>-->
-<!--          </td>-->
-<!--        </tr>-->
-<!--        </tbody></table>-->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px">
