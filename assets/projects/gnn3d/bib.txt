@@ -1,0 +1,6 @@
+@article{Weng2020_GNN3DMOT, 
+author = {Weng, Xinshuo and Wang, Yongxin and Man, Yunze and Kitani, Kris}, 
+journal = {CVPR}, 
+title = {{GNN3DMOT: Graph Neural Network for 3D Multi-Object Tracking with 2D-3D Multi-Feature Learning}}, 
+year = {2020} 
+}
