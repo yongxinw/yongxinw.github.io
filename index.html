@@ -126,7 +126,37 @@
 
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
-                
+                    <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+                        <td style="padding:20px;width:25%;vertical-align:top">
+                            <div class="one">
+                                <div class="two" id='socialIQ'><img src='assets/projects/nova/nova-s.png' style="width: 160px;"></div>
+                                <!-- <img src='assets/projects/hilander/teaser.png'> -->
+                            </div>
+                            <script type="text/javascript">
+                                function nightsight_start() {
+                                    document.getElementById('nightsight_image').style.opacity = "1";
+                                }
+    
+                                function nightsight_stop() {
+                                    document.getElementById('nightsight_image').style.opacity = "0";
+                                }
+    
+                                nightsight_stop()
+                            </script>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:top">
+                            <a href="assets/projects/nova/the-amazon-nova-family-of-models-technical-report-and-model-card.pdf">
+                                <papertitle>The Amazon Nova family of models: Technical report and model card</papertitle>
+                            </a>
+                            
+                            <br> Amazon Artificial General Intelligence, <em>2024</em>
+                            <!-- <a href="https://github.com/jedyang97/MTAG">code</a> /
+                            <a href="assets/projects/mtag/mtag.txt">bibtex</a> -->
+                            <br>
+                            <p></p>
+                        </td>
+                    </tr>
+
                 <!-- SPE, ECCV 2021 -->
                 <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
                     <td style="padding:20px;width:25%;vertical-align:top">
@@ -497,12 +527,39 @@
             </table>
             <table width="100%" align="center" border="0" cellpadding="20">
                 <tbody>
+                    
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:top">
+                            <img src="assets/images/aws_160x160.png"></td>
+                        <td width="75%" valign="top">
+                            <a href="https://amazon.jobs/content/en/teams/AGI"><strong style="font-size: 18px">Amazon AGI</strong></a>, <strong style="font-size: 18px">Jun. 2023 - Present</strong>
+                            <br>
+                            <p>
+                                Applied Scientist
+                            </p>
+                            <p>Launched <a href="https://aws.amazon.com/bedrock/amazon-models/titan/" style="font-weight: bold;">Amazon Titan</a> (2023) and <a href="https://www.aboutamazon.com/news/aws/amazon-nova-artificial-intelligence-bedrock-aws" style="font-weight: bold;">Amazon Nova</a> (2024) suites of foundation models, including Amazon’s
+                                large language models (LLMs), image generation models, and video generation models.</p>
+                                <p>Responsible for R&D to improve the performance, safety, and transparency of generative AI models.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:20px;width:25%;vertical-align:top">
+                            <img src="assets/images/aws_160x160.png"></td>
+                        <td width="75%" valign="top">
+                            <a href="https://github.com/autogluon/autogluon"><strong style="font-size: 18px">Amazon AutoGluon</strong></a>, <strong style="font-size: 18px">Oct. 2022 - Jun. 2023</strong>
+                            <br>
+                            <p>
+                                Applied Scientist
+                            </p>
+                            <p>Amazon's opensource AutoML Framekwork that allows users to train and evaluate ML models with 3 lines of code</p>
+                        </td>
+                    </tr>
                 <tr>
                     <td style="padding:20px;width:25%;vertical-align:top">
                         <img src="assets/images/aws_160x160.png"></td>
                     <td width="75%" valign="top">
-                        <a href="https://aws.amazon.com/rekognition/"><strong style="font-size: 18px">AWS
-                            Rekognition</strong></a>, <strong style="font-size: 18px">Mar. 2020 - Dec. 2022</strong>
+                        <a href="https://aws.amazon.com/rekognition/"><strong style="font-size: 18px">Amazon
+                            Rekognition</strong></a>, <strong style="font-size: 18px">Mar. 2020 - Oct. 2022</strong>
                         <br>
                         <p>
                             Applied Scientist
